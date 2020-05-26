@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            margin: 0;
+            background-color: black;
+        }
+
+        .container {
+            font-size: 0;
+            height: 100%;
+        }
+        .sub {
+            display: inline-block;
+            vertical-align: top;
+            width: 50%;
+            height: 25%;
+            position: relative;
+            overflow: auto;
+        }
+
+        video {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            z-index: 0;
+        }
+
+        .float {
+            font-size: initial;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 10;
+            color: white;
+            background-color: black;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div id="preset_div" class="float"></div>
+        <div class="sub" id="video_1_div">
+            <video id="video_720p30_vp8" autoplay loop muted controls>
+                <source src="vp8_1.webm">
+            </video>
+            <div id="video_720p30_vp8_1_info" class="float"></div>
+        </div>
+        <div class="sub" id="video_2_div">
+            <video id="video_1080p_vp8_2" autoplay loop muted controls>
+                <source src="vp8_2.webm">
+            </video>
+            <div id="video_1080p_vp8_2_info" class="float"></div>
+        </div>
+    </div>
+</body>
+
+</html>
