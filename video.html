@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            margin: 0;
+            background-color: black;
+        }
+
+        .container {
+            font-size: 0;
+            height: 100%;
+        }
+        .sub {
+            display: inline-block;
+            vertical-align: top;
+            width: 50%;
+            height: 70%;
+            position: relative;
+            overflow: auto;
+        }
+
+        video {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            z-index: 0;
+        }
+       .main {
+            display: inline-block;
+            vertical-align: top;
+            width: 100%;
+            height: 30%;
+            position: relative;
+            overflow: auto;
+        }
+          canvas {
+            position: absolute;
+            left: 1px;
+            right: 0;
+            top: 0;
+            bottom: 0;
+          }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <canvas></canvas>
+        <div class="sub" id="video_2_div">
+            <video id="video_720p30_2" autoplay loop muted >
+             <source src="https://upload.wikimedia.org/wikipedia/commons/transcoded/c/c0/Big_Buck_Bunny_4K.webm/Big_Buck_Bunny_4K.webm.480p.vp9.webm">
+            </video>
+        </div>
+    </div>
+</body>
+
+</html>
